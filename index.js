@@ -26,9 +26,9 @@ http
 /* const fs = require("fs");
 const input = process.argv;
 fs.writeFileSync(input[2], input[3]); */
-const fs = require("fs");
+/* const fs = require("fs");
 const path = require("path");
-const dirPath = path.join(__dirname, "files");
+const dirPath = path.join(__dirname, "files"); */
 /* console.log(dirPath);
 for (let i = 0; i < 5; i++) {
   fs.writeFileSync(dirPath + `apple${i}.txt`, "a simple text file");
@@ -64,7 +64,7 @@ app.get("/help", (req, res) => {
 });
 
 app.listen(3000); */
-const express = require("express");
+/* const express = require("express");
 const app = express();
 const reqFilter = (req, resp, next) => {
   console.log("reqFilter");
@@ -81,4 +81,40 @@ app.get("", (req, resp) => {
 app.get("/users", (req, resp) => {
   resp.send("Welcome to users page");
 });
-app.listen(3000);
+app.listen(3000); */
+/* const { MongoClient, Db } = require("mongodb");
+const url = "mongodb://0.0.0.0:27017/";
+const databasename = "e-comm";
+const client = new MongoClient(url);
+async function getData() {
+  let result = await client.connect();
+  console.log("db collected");
+  db = result.db(databasename);
+  collection = db.collection("products");
+  let data = await collection.find({ name: "Oppo" }).toArray();
+  console.log(data);
+}
+getData();
+ */
+/* dbConnect().then((resp) => {
+  resp
+    .find()
+    .toArray()
+    .then((data) => {
+      console.warn(data);
+    });
+  console.warn();
+});
+ */
+const insert = require("./insert");
+const update = require("./update");
+const dbConnect = require("./delete");
+const Delete = require("./update");
+const main = async () => {
+  let data = await dbConnect();
+  //await insert();
+  //data = await data.find().toArray();
+  // console.warn(data);
+  await Delete;
+};
+main();
