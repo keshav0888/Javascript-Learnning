@@ -22,6 +22,10 @@ function b() {
 }
  */
 
+//const { double } = require("webidl-conversions");
+
+//const { copyFileSync } = require("fs");
+
 /* function a() {
   var b = 10;
   c();
@@ -30,9 +34,109 @@ function b() {
   }
 }
 a(); */
-
+/*
 {
   var a = 10;
   let b = 20;
   const c = 30;
+}*/
+/* var a = 100;
+{
+  var a = 10;
+  let b = 20;
+  const c = 30;
+  console.log(a);
+  console.log(b);
+  console.log(c);
 }
+console.log(a); */
+//funcation statement
+//a();
+//console.log(b);
+/* function a() {
+  console.log("a callled");
+} */
+
+//function Expression
+/* var b = function (a, b) {
+  //parameters
+  console.log("b callled", a, b);
+};
+b(1, 2); */ //argument
+//Anonymous function
+/* function () {
+
+}
+ */
+
+//named function expression
+/* setTimeout(function () {
+  console.log("timer");
+}, 5000);
+
+function x(y) {
+  console.log("x");
+  y();
+}
+x(function y() {
+  console.log("y");
+});
+ */
+//var e1 = document.getElementById("clickme");
+//if (e1) {
+
+/* function attachEventListeners() {
+  document.getElementById("clickme").addEventListener("click", function xyz()
+  {
+    console.log("btn click");
+  });
+}
+attachEventListeners() */
+/* function a() {
+  console.log("a");
+}
+a();
+console.log("End"); */
+/* console.log("Start");
+setTimeout(function () {
+  console.log("Callback");
+}, 5000);
+console.log("End"); */
+/* document.getElementById("clickme").addEventListener("click", function cb() {
+  console.log("btn click");
+});
+console.log("END"); */
+
+/* console.log("start");
+setTimeout(function cbT() {
+  console.log("CB setimeout");
+}, 5000);
+
+fetch("https://api.github.com/users/hadley/orgs").then(function cbF() {
+  console.log("CB netflix");
+});
+console.log("End");
+ */
+/* const radius = [3, 1, 2, 4];
+const calculateArea = function (radius) {
+  const output = [];
+  for (let i = 0; i < radius.length; i++) {
+    output.push(Math.PI * radius[i] * radius[i]);
+  }
+  return output;
+};
+console.log(calculateArea(radius));
+ */
+/* const arr = [5, 1, 5, 6, 8];
+function double(x) {
+  return x * 2;
+}
+function triple(x) {
+  return x * 3;
+}
+function binary(x) {
+  return x.toString(2);
+}
+const output = arr.map(binary);
+console.log(output);
+ */
