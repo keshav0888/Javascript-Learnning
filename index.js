@@ -22,6 +22,8 @@ function b() {
 }
  */
 
+//const { count } = require("console");
+
 //const { double } = require("webidl-conversions");
 
 //const { copyFileSync } = require("fs");
@@ -140,3 +142,38 @@ function binary(x) {
 const output = arr.map(binary);
 console.log(output);
  */
+//filter function
+
+/* const arr = [5, 1, 3, 2, 6];
+function isOdd(x) {
+  return x % 2;
+}
+const output = arr.filter(isOdd);
+console.log(output); */
+//reduce function
+
+/* const arr = [5, 1, 3, 2, 4];
+function findSum(arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum = sum + arr[i];
+  }
+  return sum;
+}
+console.log(findSum(arr));
+const output = arr.reduce(function (acc, curr) {
+  acc = acc + curr;
+  return acc;
+}, 0);
+console.log(output); */
+
+const users = [
+  { firstname: "akshay ", lastname: "saini", age: 26 },
+  { firstname: "keshav ", lastname: "shinde", age: 24 },
+  { firstname: "vaibhav ", lastname: "shinde", age: 20 },
+  { firstname: "amol ", lastname: "devakate", age: 23 },
+];
+
+//list of full name
+const output = users.map((x) => x.firstname + x.lastname);
+console.log(output);
